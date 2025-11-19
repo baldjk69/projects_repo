@@ -1,0 +1,36 @@
+body{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#tasks{
+  list-style: none;
+  padding: 0;
+
+}
+
+#tasks li{
+  background: #f0f0f0;
+  margin: 8px auto;
+  padding: 8px 12px;
+  width: 200px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#tasks li:hover{
+  background: #d7e9ff;
+}
+
+.hidden{
+  display: none;
+}
+
+.revealed{
+  display: inline-block;
+}
+
+
+

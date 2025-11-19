@@ -1,0 +1,74 @@
+(index.html):
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en">
+    <meta charset="utf-8">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <ul id="tasks"></ul>
+  
+    <input type="text" id="task">
+    <button class="add-task-btn">Add task</button>
+    <button class="remove-task-btn hidden">Remove task</button>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+(styles.css):
+.hidden{
+  display: none;
+}
+
+.hidden.revealed{
+  display: block;
+}
+
+(main.js):
+`
+TO-DO LIST APP :
+
+1- No tasks, add task button
+
+2- Task is clicked - Remove Task button
+
+`
+// 1- No tasks - Add task button - Task added
+
+`
+2- 
+Task is clicked -
+Remove Task button appear - 
+Task removed -
+Remove Task button disappear.
+`
+
+const tasks = document.querySelector('#tasks')
+const task = document.querySelector('#task')
+const addButton = document.querySelector('.add-task-btn')
+const removeBtn = document.querySelector('.remove-task-btn')
+
+
+function addTask(){
+  const newTask = document.createElement('li')
+  newTask.innerText = taskInput
+  tasks.appendChild(newTask)
+}
+
+function showRemoveBtn(){
+  removeBtn.classList.add('revealed')
+}
+
+function removeTask(){
+  removeBtn.classList.remove('revealed')
+}
+
+addButton.addEventListener('click', addTask)
+removeBtn.addEventListener('click', removeTask)
+
+
+

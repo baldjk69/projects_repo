@@ -1,0 +1,68 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Flex layout for portfolio section*/
+.portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0, 0.1);
+}
+
+/* Profile image */
+.picture-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007bff;
+}
+
+/* Text styling */
+h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+h2 {
+  margin: 5px 0 15px;
+  font-weight: normal;
+  color: #555;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+  .portfolio{
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .picture-container img {
+    width: 120px;
+    height: 120px;
+  }
+
+  p {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta lang="en">
+    <meta charset="utf-8">
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <script>
+      num1 = parseFloat(prompt("Enter a number : ")) 
+      operation = (prompt("Enter an operation : ")) 
+      num2 = parseFloat(prompt("Enter a second number: ")) 
+    
+      result = 0
+      switch(operation)
+      {
+        case "+":
+          result = num1 + num2
+          break
+        case "-":
+          result = num1 - num2
+          break
+        case "*":
+          result = num1 * num2
+          break
+        case "/":
+          result = num1 / num2
+          break
+        default:
+          alert("Invalid operation")
+      }
+      alert(result)
+    </script>
+  </body>
+</html>
